@@ -3,6 +3,8 @@ import re
 from configs import settings
 
 #/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/
+
+
 class CPF(object):
 
     """docstring for CPF"""
@@ -19,7 +21,7 @@ class CPF(object):
 
             for cpf_txt in cpfs:
                 cpf_clear = cpf_txt.replace('.', '').replace('-', '')
-                
+
                 if self.cpf == "".join(cpf_clear.split()):
                     return False
 
