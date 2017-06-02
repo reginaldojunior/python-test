@@ -6,9 +6,7 @@ def situation(request, cpf):
     objectCPF = CPF(cpf)
 
     is_valid = 'FREE'
-    if not objectCPF.is_valid():
-        is_valid = 'CPF is invalid'
-
+    
     if not objectCPF.is_blacklist():
     	is_valid = 'BLOCK'
 
