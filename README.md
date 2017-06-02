@@ -24,3 +24,13 @@ Como entregar este teste
 -----
 
 Você deve forkar este projeto em sua própria conta do GitHub e fazer o commit em seu próprio repositório.
+
+Rodando o código
+------
+
+Para rodar o código você deve ter instalado em sua máquina o docker e docker composer e rodar `docker-compose up` na raiz do projeto. Feito isso as urls estarão acessiveis.
+
+Rodando os testes
+------
+
+Instale o requirements-dev e rode `pytest` dentro de src.
