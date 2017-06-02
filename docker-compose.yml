@@ -5,7 +5,8 @@ services:
     image: postgres
   web:
     build: .
-    command: python pythontest/manage.py runserver 0.0.0.0:5000
+    command: pip install -r requirements.txt
+    command: python src/manage.py runserver 0.0.0.0:5000
     volumes:
       - .:/code
     ports:
